@@ -1,6 +1,6 @@
 import subprocess
 
-bashCommand = "ls .."
+bashCommand = "ls -R"
 output = subprocess.check_output(['bash','-c', bashCommand])
 
 print output
