@@ -1,8 +1,7 @@
 import subprocess
 
 def create():
-    bashCommand = 'touch delme.txt'
+    bashCommand = 'cat ~/.aws/credentials'
     output = subprocess.check_output(['bash','-c', bashCommand])
-    output = subprocess.check_output(['bash','-c', 'ls'])
     return output
 
